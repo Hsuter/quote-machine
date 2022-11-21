@@ -9,7 +9,7 @@ const yellow = { background: "yellow" };
 function App() {
   const [author, setAuthor] = useState([]);
   const [color, setColor] = useState(yellow);
-  const [advice, setAdvice] = useState([]);
+  const [quote, setQuote] = useState([]);
 
   const fetchQuote = () => {
     const options = {
@@ -64,7 +64,7 @@ function App() {
             <div className="r ">
               <div className="a ">
                 <a
-                  href={`https://twitter.com/intent/tweet?text=${advice} by ${author}`}
+                  href={`https://twitter.com/intent/tweet?text=${quote} by ${author}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary btn-sm"
@@ -87,7 +87,10 @@ function App() {
                   href="#"
                   className="btn btn-primary btn-sm h6"
                   style={{ background: color }}
-                  onClick={ () => {changeColor();fetchQuote();}}
+                  onClick={() => {
+                    changeColor();
+                    fetchQuote();
+                  }}
                 >
                   New Quote
                 </a>
