@@ -25,7 +25,7 @@ function App() {
     axios
       .request(options)
       .then(function (response) {
-        setAdvice(response.data.quote);
+        setQuote(response.data.quote);
         setAuthor(response.data.author);
         console.log(response.data);
       })
@@ -55,7 +55,7 @@ function App() {
               <span>
                 <FaQuoteLeft />
               </span>
-              {advice}
+              {quote}
               <FaQuoteRight />
             </p>
             <div className="xl ">
