@@ -3,7 +3,8 @@ body {
     height: 100%;
     -webkit-text-size-adjust: 100%;
 }
-.a{
+
+.a {
     margin-right: 10px;
 
 }
@@ -15,19 +16,22 @@ body {
     margin-left: 20px;
     width: 100%;
 }
-@media  (max-width: 650px) {
-    .r{
-        
+
+@media (max-width: 650px) {
+    .r {
+
         width: 100%;
     }
-    .c{
+
+    .c {
         width: 50px !important;
-       
+
     }
-    .c a{
-     
-       font-size: 7px!important;
-       
+
+    .c a {
+
+        font-size: 7px !important;
+
 
     }
 }
@@ -48,6 +52,7 @@ body {
     max-width: 50vw !important;
 
 }
-.r{
+
+.r {
     display: flex;
 }

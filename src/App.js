@@ -41,7 +41,6 @@ function App() {
     setColor(finalColor);
   };
 
-  const renderAll = () => {};
   useEffect(() => {
     fetchQuote();
   }, []);
