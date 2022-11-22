@@ -89,32 +89,3 @@ body {
     margin-top: 30px;
 
 }
-
-.myclass-enter {
-    opacity: 0;
-}
-
-.myclass-enter-active {
-    opacity: 1;
-   
-    transition: opacity 5000ms ease-in;
-
-}
-
-.myclass-enter-done {
-    opacity: 1;
-
-}
-
-.myclass-exit {
-    opacity: 1;
-}
-
-.myclass-exit-active {
-    opacity: 0;
-    transition: opacity 5000ms ease-in;
-}
-
-.myclass-enter-done {
-    opacity: 1;
-}

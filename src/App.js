@@ -3,10 +3,8 @@ import { FaQuoteLeft, FaQuoteRight, FaTwitter, FaTumblr } from "react-icons/fa";
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { CSSTransition } from "react-transition-group";
 
 function App() {
-  const [isEnter, setIsEnter] = useState(false);
   const [author, setAuthor] = useState([]);
   const [color, setColor] = useState("purple");
   const [quote, setQuote] = useState([]);
@@ -27,12 +25,11 @@ function App() {
         let index = Math.floor(Math.random() * response.data.length + 1);
         setQuote(response.data.quote);
         setAuthor(response.data.author);
-        console.log(response.data[index]);
+        console.log(response.data);
       })
       .catch(function (error) {
         console.error(error);
       });
-    setIsEnter((v) => !v);
   };
 
   const changeColor = (color) => {
@@ -56,11 +53,9 @@ function App() {
               style={{ color: color }}
             >
               <FaQuoteLeft className="iconL" />
-              <CSSTransition in={isEnter} timeout={1000} classNames="myclass">
-                <p>
-                  {quote} {isEnter ? "Enter" : "Exit"}
-                </p>
-              </CSSTransition>
+
+              <p>{quote}</p>
+
               <FaQuoteRight className="iconR" />
             </div>
             <div className="xl ">
