@@ -34,7 +34,23 @@ body {
 
 
     }
+
+    .card-body p {
+        font-size: 25px !important;
+
+
+    }
 }
+
+@media (max-width: 400px) {
+    .card-body p {
+        font-size: 15px !important;
+
+
+    }
+
+}
+
 
 
 .xl {
@@ -53,6 +69,52 @@ body {
 
 }
 
+.card-text {
+    font-size: 40px !important;
+
+
+}
+
 .r {
     display: flex;
+}
+
+.iconL {
+    margin-right: 5px;
+    margin-top: -40px;
+}
+
+.iconR {
+    margin-left: 5px;
+    margin-top: 30px;
+
+}
+
+.myclass-enter {
+    opacity: 0;
+}
+
+.myclass-enter-active {
+    opacity: 1;
+   
+    transition: opacity 5000ms ease-in;
+
+}
+
+.myclass-enter-done {
+    opacity: 1;
+
+}
+
+.myclass-exit {
+    opacity: 1;
+}
+
+.myclass-exit-active {
+    opacity: 0;
+    transition: opacity 5000ms ease-in;
+}
+
+.myclass-enter-done {
+    opacity: 1;
 }
