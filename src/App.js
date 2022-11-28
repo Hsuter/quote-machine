@@ -60,11 +60,11 @@ function App() {
                 card-text quote-text text-align-center "
                   style={{ color: color }}
                 >
-                  <FaQuoteLeft className="iconL" />
-
-                  <p>{quote}</p>
-
-                  <FaQuoteRight className="iconR" />
+                  <p>
+                    <FaQuoteLeft className="iconL" />
+                    {quote}
+                    <FaQuoteRight className="iconR" />
+                  </p>
                 </div>
                 <div className="xl ">
                   <p className="author" style={{ color: color }}>
