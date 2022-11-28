@@ -49,6 +49,18 @@ body {
 
     }
 
+    .Bi {
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+@media (min-width: 600px) {
+    .Bi {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
 }
 
 
@@ -87,5 +99,12 @@ body {
 .iconR {
     margin-left: 5px;
     margin-top: 30px;
+
+}
+
+.Bi {
+    height: 300px;
+    width: 300px;
+
 
 }
